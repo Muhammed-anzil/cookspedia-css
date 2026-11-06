@@ -1,0 +1,341 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: rgb(25, 130, 85);
+    padding: 12px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+.brand {
+    font-size: 22px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand i {
+    font-size: 35px;
+}
+
+.header-links>a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-links>a:hover {
+    color: white;
+}
+
+.header-user {
+    background-color: rgb(0, 190, 220);
+    padding: 12px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.header-user i {
+    color: black;
+    font-size: 18px;
+}
+
+.hero {
+    background-color: rgb(25, 130, 85);
+    display: flex;
+    padding: 10px 0px 20px;
+    color: white;
+}
+
+.hero-content {
+    width: 50%;
+}
+
+.hero-content h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 27px;
+}
+.hero-image {
+    width: 50%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    transition: transform 500ms ;
+}
+.hero-image>img:hover {
+    transform: rotate(360deg) scale(1.5);
+}
+
+.popular-recipes {
+    padding: 70px 50px;
+}
+
+.popular-recipes h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 55px;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.recipe-card {
+    width: 320px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.recipe-content {
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.recipe-content h3 {
+    font-size: 18px;
+}
+
+.quick-recipes {
+    height: 335px;
+    background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-content {
+    width: 85%;
+    padding: 35px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.quick-content h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #212529;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.quick-content p {
+    font-size: 25px;
+    color: #212529;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.download-section {
+    background-color: rgb(25, 130, 85);
+    display: flex;
+    align-items: center;
+    height: 390px;
+    padding: 20px 50px;
+}
+
+.download-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-image img {
+    width: 80%;
+    height: 350px;
+    object-fit: contain;
+}
+
+.download-content {
+    width: 50%;
+    color: white;
+}
+
+.download-content h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.download-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background-color: #f8f9fa;
+    color: #0d6efd;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px black;
+    text-decoration: none;
+}
+
+/* User Testimonials Section */
+.testimonials {
+    padding: 25px 50px 60px;
+    background-color: white;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 25px;
+    color: #212529;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.testimonial-card {
+    width: 25%;
+    height: 238px;
+    padding: 60px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: green;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+}
+
+/* Footer Brand and Description */
+.footer-brand {
+    width: 33%;
+}
+
+.footer-brand h1 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.footer-brand h1 i {
+    font-size: 30px;
+}
+
+.footer-brand p {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+/* Footer Links */
+.footer-links {
+    width: 18%;
+}
+
+.footer-links h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.footer-links ul {
+    padding-left: 25px;
+}
+
+.footer-links li {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: yellow;
+}
+
+/* Footer Feedback Form */
+.footer-feedback {
+    width: 33%;
+}
+
+.footer-feedback h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.footer-feedback textarea {
+    width: 100%;
+    height: 78px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.footer-feedback button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.footer-feedback button:hover {
+    background-color: #0b5ed7;
+}
